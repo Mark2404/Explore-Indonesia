@@ -101,6 +101,57 @@ button:hover {
   border: 3px solid rgb(196, 11, 11);
 }
 
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -382,6 +433,57 @@ button:hover {
   border: 3px solid rgb(196, 11, 11);
 }
 
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
 .first-peace-box {
   display: flex;
   align-items: center;
@@ -549,6 +651,57 @@ button:hover {
   border: 3px solid rgb(196, 11, 11);
 }
 
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
 .big-img-sec {
   background-image: url(../assets/icons/big-img.svg);
   background-position: center;
@@ -713,6 +866,57 @@ button:hover {
   border: 3px solid rgb(196, 11, 11);
 }
 
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
 .white-sec {
   background-image: url(../assets/imgs/map-bc.svg);
   background-position: center;
@@ -841,6 +1045,57 @@ button:hover {
   background-color: #ff0b0b;
   border-radius: 6px;
   border: 3px solid rgb(196, 11, 11);
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
 }
 
 .video-sec {
@@ -987,6 +1242,57 @@ button:hover {
   border: 3px solid rgb(196, 11, 11);
 }
 
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
 .photo-sec-title {
   display: flex;
   align-items: center;
@@ -1110,6 +1416,57 @@ button:hover {
   background-color: #ff0b0b;
   border-radius: 6px;
   border: 3px solid rgb(196, 11, 11);
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
 }
 
 .map-sec {
@@ -1270,6 +1627,57 @@ button:hover {
   background-color: #ff0b0b;
   border-radius: 6px;
   border: 3px solid rgb(196, 11, 11);
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.903);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.overlay-content a:hover {
+  color: #ffdd57;
+}
+
+/* Кнопка для закрытия */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
 }
 
 footer {
