@@ -82,18 +82,18 @@
         margin-bottom: 23px;
     }
 
+    button {
+        border-radius: 32px;
+        padding: 16px 24px;
+        width: 179px;
+        height: 59px;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #fff;
 
-}
+    }
 
-.header_title button {
-    border-radius: 32px;
-    padding: 16px 24px;
-    width: 179px;
-    height: 59px;
-    font-family: $font-primary;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: #fff;
 }
