@@ -191,3 +191,253 @@ button:hover {
 #content {
     display: none;
 }
+
+.showmore {
+    display: none;
+}
+
+@media(max-width:665px) {
+    .mb-container {
+        max-width: 670px;
+    }
+
+    .mb-none {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .rotate-sec {
+        display: none;
+    }
+
+    .mb-header-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-header-title h1 {
+        font-size: 58px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+
+    .mb-header-title button {
+        width: 100%;
+    }
+
+    .mb-header-bottom-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .mb-little-titles {
+        display: none;
+    }
+
+    .days {
+        display: none;
+    }
+
+    .mb-video {
+        position: absolute;
+        left: 100px;
+        bottom: 40px;
+    }
+
+    .mb-first-peace {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-first-peace-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mb-sec1-text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mb-carusel-sec-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-white-sec {
+        background-image: url(../assets/icons/map-mn.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .mb-video-sec-video {
+        width: 100%;
+    }
+
+    .mb-video-info-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-info-text {
+        flex-direction: column;
+    }
+
+    .mb-info {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mb-grid-container {
+        width: 100%;
+    }
+
+    .mb-photo-sec-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .mb-girls {
+        border-radius: 10px;
+        width: 151px;
+        height: 217px;
+    }
+
+    .mb-ocean {
+        border-radius: 10px;
+        width: 151px;
+        height: 86px;
+    }
+
+    .mb-volcano {
+        border-radius: 10px;
+        width: 151px;
+        height: 86px;
+    }
+
+    .mb-famer {
+        border-radius: 10px;
+        width: 150px;
+        height: 153px;
+    }
+
+    .mb-ocean1 {
+        border-radius: 10px;
+        width: 150px;
+        height: 153px;
+    }
+
+    .girl {
+        border-radius: 10px;
+        width: 151px;
+        height: 217px;
+    }
+
+    .mb-steps {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+    }
+
+    .mb-steps-info {
+        flex-direction: column;
+    }
+
+    .mb-text-sec {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    .mb-showmore {
+        display: block;
+        text-decoration: none;
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: rgba(215, 23, 23, 0.779);
+    }
+
+    .mb-img {
+        width: 314px;
+        height: 208px;
+    }
+
+    .mb-steps .circle {
+        display: none;
+    }
+
+    .mb-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mb-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
