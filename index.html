@@ -8,6 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="shortcut icon" href="./assets/icons/footer-rose.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Explore indonesia</title>
 </head>
 
@@ -53,7 +54,7 @@
                 </div>
                 <p>01</p>
             </div>
-            <div class="header_title mb-header-title">
+            <div data-aos="zoom-out-up" class="header_title mb-header-title">
                 <h1>explore <br>
                     indonesia</h1>
                 <button>Start travelling</button>
@@ -216,7 +217,7 @@
 
     </section>
     <section id="about" class="white-sec mb-white-sec mb-container">
-        <div class="_white-sec-content">
+        <div data-aos="zoom-in-right" class="_white-sec-content">
             <h1>Our hills and valleys are like <br> nothing you’ve seen.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Fusce sit amet magna commodo, tempus dolor
                 <br> sit
@@ -273,17 +274,18 @@
         </div>
         <div class="grid-container mb-grid-container">
             <div class="first-pictures">
-                <img class="girls mb-girls" src="./assets/imgs/photo-sec-girls.svg" alt="">
-                <img class="ocean mb-ocean" src="./assets/imgs/photo-sec-ocean.svg" alt="">
+                <img data-aos="zoom-in-down" class="girls mb-girls" src="./assets/imgs/photo-sec-girls.svg" alt="">
+                <img data-aos="zoom-in-down" class="ocean mb-ocean" src="./assets/imgs/photo-sec-ocean.svg" alt="">
             </div>
             <div class="first-pictures">
-                <img class=" volcano mb-volcano" src="./assets/imgs/photo-sec-volcano.svg" alt="">
-                <img class="girl" src="./assets/imgs/photo-sec-girl.svg" alt="">
+                <img data-aos="zoom-in-down" class=" volcano mb-volcano" src="./assets/imgs/photo-sec-volcano.svg"
+                    alt="">
+                <img data-aos="zoom-in-down" class="girl" src="./assets/imgs/photo-sec-girl.svg" alt="">
             </div>
             <div class="first-pictures">
-                <img class=" farmer mb-famer" src="./assets/imgs/photo-sec-farmer.svg" alt="">
+                <img data-aos="zoom-in-down" class=" farmer mb-famer" src="./assets/imgs/photo-sec-farmer.svg" alt="">
 
-                <img class="ocean1 mb-ocean1" src="./assets/imgs/photo-sec-ocean1.svg" alt="">
+                <img data-aos="zoom-in-down" class="ocean1 mb-ocean1" src="./assets/imgs/photo-sec-ocean1.svg" alt="">
 
             </div>
 
@@ -446,6 +448,10 @@
         document.getElementById("content").style.display = "block";
     });
 
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 
 </html>
