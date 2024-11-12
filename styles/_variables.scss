@@ -81,3 +81,19 @@ button:hover {
     opacity: 1;
     visibility: visible;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #93847add;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0b0b;
+    border-radius: 6px;
+    border: 3px solid rgb(196, 11, 11);
+
+}
