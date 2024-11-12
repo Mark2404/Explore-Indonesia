@@ -384,15 +384,16 @@
 
         </div>
     </div>
+    <div d="loading-screen">
+        <div class="loader"></div>
+    </div>
 
     <button id="backToTop" title="Back to Top">&#8679;</button>
 
     <script src="script.js"></script>
     <script>
-        // Получаем кнопку
-        const backToTopButton = document.getElementById("backToTop");
 
-        // Показать кнопку при прокрутке вниз на 200px
+        const backToTopButton = document.getElementById("backToTop");
         window.onscroll = function () {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 backToTopButton.classList.add("show");
@@ -401,7 +402,7 @@
             }
         };
 
-        // Прокрутить вверх при нажатии на кнопку
+
         backToTopButton.onclick = function () {
             window.scrollTo({
                 top: 0,
@@ -427,6 +428,16 @@
         document.getElementById("overlay").classList.remove("show");
         document.body.style.overflow = "";
     }
+
+</script>
+<script src="script.js"></script>
+<script>
+    window.addEventListener("load", function () {
+
+        document.getElementById("loading-screen").style.display = "none";
+
+        document.getElementById("content").style.display = "block";
+    });
 
 </script>
 
