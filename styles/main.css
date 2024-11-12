@@ -231,7 +231,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -259,6 +259,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -390,6 +393,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 * {
@@ -803,7 +812,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -831,6 +840,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -962,6 +974,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 .first-peace-box {
@@ -1261,7 +1279,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -1289,6 +1307,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -1420,6 +1441,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 .big-img-sec {
@@ -1716,7 +1743,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -1744,6 +1771,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -1875,6 +1905,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 .white-sec {
@@ -2137,7 +2173,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -2165,6 +2201,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -2296,6 +2335,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 .video-sec {
@@ -2572,7 +2617,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -2600,6 +2645,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -2731,6 +2779,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 .photo-sec-title {
@@ -2988,7 +3042,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -3016,6 +3070,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -3147,6 +3204,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 .map-sec {
@@ -3439,7 +3502,7 @@ button:hover {
   }
   .mb-video {
     position: absolute;
-    left: 100px;
+    left: 0px;
     bottom: 40px;
   }
   .mb-first-peace {
@@ -3467,6 +3530,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+  }
+  .mb-video {
     width: 100%;
   }
   .mb-white-sec {
@@ -3598,6 +3664,12 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+  }
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 footer {
