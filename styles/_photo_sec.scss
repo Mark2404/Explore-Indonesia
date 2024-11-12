@@ -27,10 +27,16 @@
         width: 45%;
         margin-bottom: 40px;
     }
-
 }
 
-.grid-container div {
+.grid-container {
     display: flex;
+    margin-bottom: 40px;
+}
+
+.first-pictures {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    margin-right: 10px;
 }
