@@ -1,0 +1,91 @@
+@import './variables';
+
+.big-img-sec {
+    background-image: url(../assets/imgs/carusel-sec-bk-img.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.carusel-sec-text {
+    background-color: #020c21;
+    opacity: 1;
+    width: 100%;
+}
+
+._carusel-sec h1 {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 150%;
+    text-align: center;
+    color: #010a20;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+
+}
+
+
+
+
+.title h1 {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.title p {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #e0e0e0;
+
+
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.info-text b {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #dd2242;
+}
+
+.info-text p {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.carusel-sec-text {
+    margin-top: 80px;
+    width: 100%;
+}
