@@ -20,3 +20,64 @@ button {
     text-align: center;
     color: #fff;
 }
+
+body {
+    scroll-behavior: smooth;
+}
+
+button:hover {
+    // border-radius: 211px;
+    // padding: 20px;
+    // width: 271px;
+    // height: 82px;
+    background-color: #ff002b;
+    border: none;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    // margin-top: 21px;
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* Основной стиль кнопки */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #dd2242;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 100;
+}
+
+/* Hover эффект */
+#backToTop:hover {
+    background-color: #e62e4e;
+    /* Чуть светлее при наведении */
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Показать кнопку при прокрутке */
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}

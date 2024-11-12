@@ -6,3 +6,7 @@
 @import "./photo_sec";
 @import './map';
 @import './footer';
+
+body {
+    scroll-behavior: smooth;
+}

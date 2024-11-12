@@ -15,16 +15,19 @@
         <div class="container nav">
 
             <div class="logo">
-                <img src="./assets/icons/Rose.svg" alt="">
-                <h1>Explore <br>
-                    Indonesia</h1>
+                <a style="text-decoration: none;" class="d-flex gap-2" href="#home">
+
+                    <img src="./assets/icons/Rose.svg" alt="">
+                    <h1>Explore <br>
+                        Indonesia</h1>
+                </a>
 
             </div>
             <div class="links">
-                <a href="#">destinations</a>
-                <a href="#">experiences</a>
-                <a href="#">about</a>
-                <a href="#">gallery</a>
+                <a href="#section1">destinations</a>
+                <a href="#experience">experiences</a>
+                <a href="#about">about</a>
+                <a href="#gallery">gallery</a>
 
             </div>
             <div class="nav-icons">
@@ -37,7 +40,7 @@
 
             </div>
         </div>
-        <div class="title-sec container">
+        <div id="home" class="title-sec container">
             <div class="rotate-sec">
 
                 <div class="track">
@@ -92,7 +95,7 @@
         </div>
 
     </header>
-    <section class="section1">
+    <section id="section1" class="section1">
         <div class="first-peace-box ">
             <img class="shadow" src="./assets/imgs/shadow.svg" alt="">
             <img class="shadow2" src="./assets/imgs/shadow.svg" alt="">
@@ -129,7 +132,7 @@
         </div>
 
     </section>
-    <section class="big-img-sec">
+    <section id="experience" class="big-img-sec">
         <div class="_carusel-sec container">
             <h1>Explore Our Secrets</h1>
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -207,7 +210,7 @@
         </div>
 
     </section>
-    <section class="white-sec">
+    <section id="about" class="white-sec">
         <div class="_white-sec-content">
             <h1>Our hills and valleys are like <br> nothing you’ve seen.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Fusce sit amet magna commodo, tempus dolor
@@ -255,7 +258,7 @@
 
         </div>
     </section>
-    <section class="container photo-sec">
+    <section id="gallery" class="container photo-sec">
         <div class="photo-sec-title">
 
             <h1>Photo Gallery</h1>
@@ -370,6 +373,32 @@
 
     </footer>
 
+    <button id="backToTop" title="Back to Top">&#8679;</button>
+
+    <script src="script.js"></script>
+    <script>
+        // Получаем кнопку
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Показать кнопку при прокрутке вниз на 200px
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.classList.add("show");
+            } else {
+                backToTopButton.classList.remove("show");
+            }
+        };
+
+        // Прокрутить вверх при нажатии на кнопку
+        backToTopButton.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+
+
+    </script>
 
 
 </body>
