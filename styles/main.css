@@ -315,18 +315,13 @@ button {
 }
 
 .big-img-sec {
-  background-image: url(../assets/imgs/carusel-sec-bk-img.webp);
+  background-image: url(../assets/icons/big-img.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   width: 100%;
-}
-
-.carusel-sec-text {
-  background-color: #020c21;
-  opacity: 1;
-  width: 100%;
+  height: 1300px;
+  position: relative;
 }
 
 ._carusel-sec h1 {
@@ -390,4 +385,9 @@ button {
 .carusel-sec-text {
   margin-top: 80px;
   width: 100%;
+  background-color: #020c21;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */
