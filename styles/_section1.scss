@@ -83,6 +83,7 @@
     }
 
     button {
+        @extend %button;
         border-radius: 32px;
         padding: 16px 24px;
         width: 179px;

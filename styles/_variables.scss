@@ -9,7 +9,7 @@ $font-secondary: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-button {
+%button {
     background-color: #dd2242;
     border: none;
     cursor: pointer;
@@ -95,7 +95,6 @@ button:hover {
     background-color: #ff0b0b;
     border-radius: 6px;
     border: 3px solid rgb(196, 11, 11);
-
 }
 
 .overlay {
@@ -116,6 +115,7 @@ button:hover {
 .overlay.show {
     opacity: 1;
     visibility: visible;
+    height: 100vh;
 }
 
 .overlay-content {
@@ -137,7 +137,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-    color: #ffdd57;
+    color: #ff0606;
 
 }
 
@@ -151,50 +151,6 @@ button:hover {
     text-decoration: none;
 }
 
-/* HTML: <div class="loader"></div> */
-.loader {
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 30px;
-    animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-    content: "Loading..."
-}
-
-@keyframes l1 {
-    to {
-        opacity: 0
-    }
-}
-
-
-#loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    /* Белый фон */
-    color: #333;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    z-index: 1000;
-}
-
-
-#content {
-    display: none;
-}
-
-.showmore {
-    display: none;
-}
 
 @media(max-width:665px) {
     .mb-container {
@@ -393,6 +349,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         width: 100%;
+        text-align: center;
 
         h1 {
             font-size: 40px;
@@ -428,6 +385,7 @@ button:hover {
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        gap: 40px;
     }
 
     .mb-footer-links {
@@ -437,6 +395,7 @@ button:hover {
         flex-direction: column;
         margin-right: 0px;
         margin-left: 0px;
+        gap: 30px;
     }
 
     .mb-numbers {
@@ -458,8 +417,11 @@ button:hover {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 20px;
+
+
+
     }
+
 
     #backToTop {
         bottom: 10px;
@@ -467,4 +429,52 @@ button:hover {
         width: 40px;
         height: 40px;
     }
+
+    .mb-grid-container {
+        display: flex;
+        align-items: center;
+        // flex-direction: column;
+        // justify-content: center;
+        // flex-direction: column;
+    }
+
+    .mb-pictures-direction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .mb-sec1-text {
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .mb-icons {
+        div {
+            gap: 20px;
+        }
+    }
+
+    .mb-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+    }
+
+
+
+
+
 }

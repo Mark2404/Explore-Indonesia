@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
@@ -23,7 +22,7 @@
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .white-sec button, .sec1-text button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -116,6 +115,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -137,7 +137,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -147,47 +147,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -352,6 +311,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -382,6 +342,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -390,6 +351,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -405,13 +367,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 * {
@@ -609,13 +598,24 @@ header {
   right: 0;
 }
 
+.my-carusel {
+  width: 500px;
+  height: 500px;
+}
+
+.carusel-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .white-sec button, .sec1-text button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -708,6 +708,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -729,7 +730,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -739,47 +740,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -944,6 +904,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -974,6 +935,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -982,6 +944,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -997,13 +960,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 .first-peace-box {
@@ -1093,7 +1083,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .white-sec button, .sec1-text button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -1186,6 +1176,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -1207,7 +1198,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -1217,47 +1208,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -1422,6 +1372,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -1452,6 +1403,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -1460,6 +1412,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -1475,13 +1428,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 .big-img-sec {
@@ -1569,7 +1549,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .white-sec button, .sec1-text button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -1662,6 +1642,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -1683,7 +1664,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -1693,47 +1674,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -1898,6 +1838,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -1928,6 +1869,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -1936,6 +1878,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -1951,13 +1894,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 .white-sec {
@@ -2010,7 +1980,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .sec1-text button, .white-sec button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -2103,6 +2073,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -2124,7 +2095,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -2134,47 +2105,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -2339,6 +2269,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -2369,6 +2300,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -2377,6 +2309,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -2392,13 +2325,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 .video-sec {
@@ -2465,7 +2425,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .sec1-text button, .white-sec button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -2558,6 +2518,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -2579,7 +2540,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -2589,47 +2550,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -2794,6 +2714,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -2824,6 +2745,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -2832,6 +2754,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -2847,13 +2770,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 .photo-sec-title {
@@ -2901,7 +2851,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-button {
+.steps-sec button, .sec1-text button, .white-sec button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -2994,6 +2944,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -3015,7 +2966,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -3025,47 +2976,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -3230,6 +3140,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -3260,6 +3171,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -3268,6 +3180,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -3283,13 +3196,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 .map-sec {
@@ -3372,7 +3312,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-button {
+.sec1-text button, .white-sec button, .steps-sec button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -3465,6 +3405,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -3486,7 +3427,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -3496,47 +3437,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -3701,6 +3601,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -3731,6 +3632,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -3739,6 +3641,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -3754,13 +3657,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 footer {
@@ -3827,7 +3757,7 @@ footer {
   box-sizing: border-box;
 }
 
-button {
+.sec1-text button, .white-sec button, .steps-sec button {
   background-color: #dd2242;
   border: none;
   cursor: pointer;
@@ -3920,6 +3850,7 @@ button:hover {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .overlay-content {
@@ -3941,7 +3872,7 @@ button:hover {
 }
 
 .overlay-content a:hover {
-  color: #ffdd57;
+  color: #ff0606;
 }
 
 .closebtn {
@@ -3951,47 +3882,6 @@ button:hover {
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  animation: l1 1s linear infinite alternate;
-}
-
-.loader:before {
-  content: "Loading...";
-}
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  /* Белый фон */
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-#content {
-  display: none;
-}
-
-.showmore {
-  display: none;
 }
 
 @media (max-width: 665px) {
@@ -4156,6 +4046,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .mb-text-sec h1 {
     font-size: 40px;
@@ -4186,6 +4077,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 40px;
   }
   .mb-footer-links {
     display: flex;
@@ -4194,6 +4086,7 @@ button:hover {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
+    gap: 30px;
   }
   .mb-numbers {
     display: flex;
@@ -4209,13 +4102,40 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
   #backToTop {
     bottom: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
+  }
+  .mb-grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .mb-pictures-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mb-sec1-text h1 {
+    text-align: center;
+  }
+  .mb-sec1-text p {
+    text-align: center;
+  }
+  .mb-sec1-text button {
+    width: 100%;
+  }
+  .mb-icons div {
+    gap: 20px;
+  }
+  .mb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
   }
 }
 body {

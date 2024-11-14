@@ -34,6 +34,7 @@
     }
 
     button {
+        @extend %button;
         border-radius: 122px;
         padding: 16px 24px;
         width: 210px;
